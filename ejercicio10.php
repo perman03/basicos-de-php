@@ -1,16 +1,15 @@
 <?php
 
     if($_POST){
+
         $valorA = $_POST["valorA"];
         $valorB = $_POST["valorB"];
 
-        if($valorA > $valorB){
-            echo "El valor de A es mayor que el valor de B";
-        }else{
-            echo "El valor de A es menor que el valor de B";
+
+        //operador or
+        if ( ($valorA != $valorB) || ($valorA > $valorB) ) {
+            echo "El valor de A es diferente al de B y es mayor";
         }
-
-
 
     }
 
