@@ -1,6 +1,30 @@
 <?php
 
+    if($_POST){
+        $valorA = $_POST["valorA"];
+        $valorB = $_POST["valorB"];
 
+        
+        //suma
+        $suma = $valorA+$valorB;
+        echo $suma;
+
+        //resta
+        $resta = $valorA - $valorB;
+        echo "<br/>".$resta;
+
+        //multiplicacion
+        $multi = $valorA * $valorB;
+        echo "<br/>" . $multi;
+
+        //division 
+        $div = $valorA / $valorB;
+        echo "<br/>".$div;
+
+
+
+
+    }
 
 
 ?>
@@ -17,8 +41,13 @@
 <body>
 
     <form action="ejercicio8.php" method="post">
-
-
+        <!-- Inpunts para introducir los valores necesarios -->
+        <legend>Valor A </legend>
+        <input type="text" name="valorA" id="">
+        <legend>Valor B </legend>
+        <input type="text" name="valorB" id="">
+        <br>
+        <input type="submit" value="Calcular">
 
     </form>
     
