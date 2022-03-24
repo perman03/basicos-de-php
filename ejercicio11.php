@@ -26,7 +26,7 @@ if($_POST){
         //si el valor A es igual al valor de B
         if($valorA==$valorB){
             //...imprime en pantalla:
-            echo "El valor de A es mayor que el valor de B <br/>";
+            echo "El valor de A es igual que el valor de B <br/>";
 
             //(segunda condición if) si el valor de A es 4...
             if($valorA == 4){
