@@ -1,0 +1,8 @@
+<?php
+
+//Funciones de arreglos
+
+
+
+
+?>
