@@ -1,8 +1,9 @@
 <?php
 
-//CLASES EN PHP
+//HERENCIA EN PHP
 
 class persona{
+
     public $nombre;   //propiedades
     public $edad;
     private $altura; //encapsulamiento privado: no se podrá imprimir
@@ -24,16 +25,15 @@ class persona{
     }
 }
 
-$objAlumno = new persona();              //creación de un objeto
-$objAlumno2 = new persona();             //objeto numero
-$objAlumno -> asignarNombre("Franco");     //pasamos el parametro (nombre)
-$objAlumno -> asignarEdad(21);
-$objAlumno2 -> asignarNombre("Julie"); 
-echo $objAlumno -> nombre;                         //imprimimos propiedad
-echo "<br/>";
-echo $objAlumno -> mostrarAltura();
-echo "<br/>";
-echo $objAlumno -> edad;
-echo "<br/>"; 
-echo $objAlumno2 -> nombre; 
+class trabajador extends persona {
+    public $puesto;   //propiedad nueva
+    public function presentarTrabajador(){
+        echo "Hola soy ".$this->nombre. " y soy un ".$this->puesto;
+    }
+}
+
+$objTrabajador = new trabajador();              //creación de un objeto
+$objTrabajador -> asignarNombre("Franco Perez");
+$objTrabajador -> puesto = "Profesor"; 
+$objTrabajador -> presentarTrabajador(); 
 ?>
