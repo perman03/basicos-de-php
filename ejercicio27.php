@@ -13,6 +13,12 @@ try{
     //PDO nos permite conectarnos a la base de datos
     $conexion=new PDO("mysql:host=$servidor;dbname=album", $usuario,$password); 
     $conexion->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION); 
+    $sql="INSERT INTO `fotos` (`id`, `nombre`, `ruta`) VALUES (NULL, 'Programando', 'foto.jpg');";
+    
+    //ejecutar comando sql
+    $conexion->exec($sql); 
+    
+    
     echo "Conexion exitosa";
 
 //Si existe algun error, mostrarlo
