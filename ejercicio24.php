@@ -25,6 +25,7 @@ class persona{
     }
 }
 
+//Creamos una nueva clase que hereda las mismas propiedades que persona
 class trabajador extends persona {
     public $puesto;   //propiedad nueva
     public function presentarTrabajador(){
