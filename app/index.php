@@ -20,6 +20,9 @@
         </div>
         <div class="col-md-4">
         <br>
+
+        <form action="secciones/index.php" method="post">       <!-- Mandamos la informacion de inicio de sesion al index de secciones-->
+
             <div class="card">
                 <div class="card-header">
                     Inicio de Sesión
@@ -55,6 +58,7 @@
                     <button type="submit" class="btn btn-primary">Iniciar sesión</button>
 
                 </div>
+           </form>        
 
             </div>
         </div>
