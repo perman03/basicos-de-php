@@ -1,8 +1,14 @@
 <?php include('../templates/header.php'); ?>
 
+<div class="row">
+        
+        <div class="col-12">
+          <br>
+          <div class="row">
+            
    
 
-   <div class="col-md-5">
+<div class="col-md-5">
 
 <form action="" method="post">
    <div class="card">
@@ -12,24 +18,25 @@
       <div class="card-body">
 
          <div class="mb-3">
-         <label for="" class="form-label">ID</label>
-         <input type="text"
-            class="form-control" 
-            name="" 
-            id="" 
-            aria-describedby="helpId" 
-            placeholder="ID">
+            <label for="" class="form-label">ID</label>
+            <input type="text"
+               class="form-control" 
+               name="" 
+               id="" 
+               aria-describedby="helpId" 
+               placeholder="ID">
           </div>
 
-      <div class="mb-3">
-        <label for="nombre_curso" class="form-label">Nombre del curso</label>
-        <input type="text"
-          class="form-control" 
-          name="nombre-curso" id="nombre-curso" 
-          aria-describedby="helpId" 
-          placeholder="Nombre del curso">
+         <div class="mb-3">
+
+            <label for="nombre_curso" class="form-label">Nombre del curso</label>
+            <input type="text"
+               class="form-control" 
+               name="nombre-curso" id="nombre-curso" 
+               aria-describedby="helpId" 
+               placeholder="Nombre del curso">
         
-      </div>
+         </div>
 
       <div class="btn-group" role="group" aria-label="">
          <button type="button" class="btn btn-success">Agregar</button>
@@ -45,7 +52,7 @@
  
       
 
-   <div class="col-md-7">
+<div class="col-7">
 
       <table class="table">
          <thead>
@@ -66,7 +73,10 @@
       </table>
       
 
-   </div>
+</div>
+
+</div>
+</div>
 
 
 
