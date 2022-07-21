@@ -5,4 +5,7 @@
 include_once '../config/bd.php';    //llamamos a la configuracion 
 $conexionBD = BD::crearInstancia();   //creamos una instancia
 
+print_r($_POST); 
+
+
 ?>

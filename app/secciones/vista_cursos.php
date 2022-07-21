@@ -41,9 +41,9 @@
          </div>
 
       <div class="btn-group" role="group" aria-label="">
-         <button type="button" class="btn btn-success">Agregar</button>
-         <button type="button" class="btn btn-warning">Editar</button>
-         <button type="button" class="btn btn-danger">Borrar</button>
+         <button type="submit" name="accion" value='agregar' class="btn btn-success">Agregar</button>
+         <button type="submit" name="accion" value='editar' class="btn btn-warning">Editar</button>
+         <button type="submit" name="accion" value='borrar' class="btn btn-danger">Borrar</button>
       </div>
 
      </div>
