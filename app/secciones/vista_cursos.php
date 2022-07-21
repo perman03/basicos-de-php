@@ -65,11 +65,15 @@
             </tr>
          </thead>
          <tbody>
+
+         <?php foreach($listaCursos as $curso){ ?>
             <tr>
-               <td>1</td>
-               <td>Sitio web con PHP</td>
+               <td><?php echo $curso['id']; ?></td>
+               <td><?php echo $curso['nombre_curso']; ?> 
+            </td>
                <td>Seleccionar</td>
             </tr>
+         <?php }?>
             
          </tbody>
       </table>
@@ -84,4 +88,4 @@
 
 
 
-<?php include('../templates/footer.php'); ?>
+<?php include('../templates/footer.php');?>

@@ -5,7 +5,11 @@
 include_once '../config/bd.php';    //llamamos a la configuracion 
 $conexionBD = BD::crearInstancia();   //creamos una instancia
 
-print_r($_POST); 
+
+//consultando BD...
+$consulta = $conexionBD -> prepare("SELECT * FROM cursos");            //query para consultar toda la informacion
+$consulta -> execute(); 
+$listaCursos = $consulta -> fetchall();                               //retorna todos los datos y los almacena en una lista 
 
 
 ?>
