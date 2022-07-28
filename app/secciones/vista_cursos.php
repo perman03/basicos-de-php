@@ -66,6 +66,7 @@
          </thead>
          <tbody>
 
+         <!-- Colocar el contenido de listaCursos en HTML mediante una tabla y un foreach -->
          <?php foreach($listaCursos as $curso){ ?>
             <tr>
                <td><?php echo $curso['id']; ?></td>
